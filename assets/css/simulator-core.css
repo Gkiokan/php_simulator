@@ -1,22 +1,22 @@
-/* Default stuff from the bare alpha. */
-.input, .result {
-  width: auto;
-  min-height: 600px;
-  background: transparent; }
+body {
+  background: #141414;
+  color: #eee; }
 
-textarea, input {
+.simulator textarea, .simulator input {
   width: 100%;
   height: 600px;
   margin: 0px auto;
   border: 0px solid black;
   outline: none; }
+.simulator h3 {
+  border-bottom: 1px solid #000; }
+.simulator .input, .simulator .result {
+  width: auto;
+  min-height: 600px; }
 
 .col-xs-6 {
-  border: 1px solid red;
+  border: 0px solid red;
   position: relative; }
-
-.container {
-  width: 90%; }
 
 .modified_alert .heading {
   display: block;
@@ -31,5 +31,9 @@ textarea, input {
 .modified_alert pre {
   color: #fff;
   background-color: #7D5858; }
+
+.ace_gutter .ace_gutter-layer {
+  background: #141414;
+  border-right: 1px solid #000; }
 
 /*# sourceMappingURL=simulator-core.css.map */
