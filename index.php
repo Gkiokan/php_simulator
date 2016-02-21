@@ -1,13 +1,12 @@
-<?php /* * * * * * * * * * * * * 
-       * Project: IDH-Online Clean Template
-       * Author: Gkiokan Sali
-       * URL: www.gkiokan.net
-       * Date: 28.08.2014
-       * * * * * * * * * * * * */
-
-       
+<?php
+/*
+  Project: PHP Simulator
+  Author: Gkiokan Sali
+  URI: //gkiokan.net
+  Date: 21.02.2016
+  Comment: Creating update for this pretty alpha version.
+*/
 ?>
-
 <!doctype>
 <html>
     <head>
@@ -16,24 +15,14 @@
         <meta name='keywords' content=''>
         <meta name='description' content=''>
         <title>PHP Simulator</title>
-        
+
         <link rel='stylesheet' type='text/css' href='assets/css/bootstrap.min.css'>
         <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
-            
-        <script src='assets/js/jquery-1.11.1.min.js'></script>
-        <script src='assets/js/bootstrap.min.js'></script>
+        <link rel='stylesheet' type='text/css' href='assets/css/simulator-core.css'>
     </head>
     <body>
-    <style>
-        .input, .result { width: auto; min-height:600px; background: transparent; }
-        textarea, input { width: 100%; height: 600px; margin:0px auto; border: 0px solid black; }
-        
-        .col-xs-6 { border: 1px solid red; position: relative; }
-        .container { width: 90%; }
-    </style>
-    
     <div class='main'>
-        
+
     <div class='container simulator'>
         <div class='row'>
             <div class='col-xs-12'>
@@ -55,39 +44,9 @@
         </div>
     </div>
     </div>
-    
-    <script>
-    $(function(){
-        function debug(new_debug){
-            var debug = $('.debug');
-            var old_debug = $('.debug').html();
-            //var new_debug = old_debug+'+';
-            debug.html(new_debug);
-        }
-        
-        function get_code(){
-            var code = $('.key').val();
-            return code;
-        }
-        
-        function push_code(code){
-            $.post('sim.php', { code:code }, function(data) {
-                var result = $('.result');
-                result.html(data);
-                
-            });
-            
-        }
-        
-        /* Animation Frame */
-        setInterval(function(){
-            code = get_code();
-            // debug(code);
-            push_code(code);
-            
-        }, 1000/60);
-        
-    });
-    </script>
+
+    <script src='assets/js/jquery-1.11.1.min.js'></script>
+    <script src='assets/js/bootstrap.min.js'></script>
+    <script src="assets/js/simulator-core.js"></script>
     </body>
 </html>

@@ -1,0 +1,35 @@
+/* Default stuff from the bare alpha. */
+.input, .result {
+  width: auto;
+  min-height: 600px;
+  background: transparent; }
+
+textarea, input {
+  width: 100%;
+  height: 600px;
+  margin: 0px auto;
+  border: 0px solid black;
+  outline: none; }
+
+.col-xs-6 {
+  border: 1px solid red;
+  position: relative; }
+
+.container {
+  width: 90%; }
+
+.modified_alert .heading {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid; }
+.modified_alert .message {
+  display: block;
+  margin-bottom: 50px; }
+.modified_alert .source {
+  display: block; }
+.modified_alert pre {
+  color: #fff;
+  background-color: #7D5858; }
+
+/*# sourceMappingURL=simulator-core.css.map */
