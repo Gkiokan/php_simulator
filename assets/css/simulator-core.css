@@ -12,7 +12,11 @@ body {
   border-bottom: 1px solid #000; }
 .simulator .input, .simulator .result {
   width: auto;
-  min-height: 600px; }
+  height: calc(100% - 200px); }
+.simulator .btn-group {
+  display: none; }
+.simulator .heading {
+  height: 100px; }
 
 .col-xs-6 {
   border: 0px solid red;

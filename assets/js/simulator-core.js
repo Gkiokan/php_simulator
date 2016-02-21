@@ -19,6 +19,7 @@ function php_simulator(){
     this.generate_editor = function (){
        editor.php = ace.edit("php");
        editor.php.setTheme("ace/theme/twilight");
+       editor.php.setOption("showPrintMargin", false);
        editor.php.session.setMode({path: "ace/mode/php", pure:true, inline:true});
     }
 

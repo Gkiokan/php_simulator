@@ -5,7 +5,13 @@ body { background:#141414; color: #eee; }
 .simulator {
     textarea, input { width: 100%; height: 600px; margin:0px auto; border: 0px solid black; outline: none; }
     h3 { border-bottom:1px solid #000; }
-    .input, .result { width: auto; min-height:600px;  }
+    .input, .result { width: auto; height:calc(100% - 200px);  }
+
+    .btn-group { display:none; }
+
+    // Row Styles
+    .heading { height:100px; }
+    
 }
 
 
