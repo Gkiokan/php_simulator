@@ -1,0 +1,7 @@
+{
+    "name": "gkiokan/php_simulator",
+    "description": "Just a simple local PHP Simulator for quick Code checks",
+    "require": {
+        "php": ">=5.6.4 || ^7.0"        
+    }
+}
